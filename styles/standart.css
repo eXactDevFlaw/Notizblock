@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    margin: 0 auto;
+    background-color: rgb(5, 23, 30);
+    display: flex;
+    flex-direction: column;
+    font-family: "Figtree", sans-serif;
+    font-size: clamp(10px, 2vw, 16px);
+    box-sizing: border-box;
+}
+  
+header {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(8, 32, 41);
+    align-items: center;
+    display: flex;
+}
+  
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(8, 32, 41);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.section {
+    max-width: 1440px;
+    min-height: calc(100vh - 300px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d_none {
+    display: none;
+}
+.nohover {
+    pointer-events: none;
+}
+
+.overlay_add_note {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.679);
+}
+
+.overlay_show_trash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.679);
+}
+  
+  .inputbox {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(100px, 70vw, 600px);
+    background-color: rgb(8, 32, 41);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  .input_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input_form label {
+    margin-bottom: 5px;
+  }
+  
+  .input_form input,
+  .input_form textarea {
+    font-family: Figtree;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .input_form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .input_form button {
+    align-self: center;
+    /* zentriert sich selbst */
+    margin-top: 20px;
+  }
+  
+  .input_form button:hover {
+    cursor: pointer;
+  }

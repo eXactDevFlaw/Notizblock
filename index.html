@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <script src="./scripts/dialog.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standart.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/note.css">
+</head>
+<body onload="init()">
+    <header>
+        <div class="header">
+            <div class="header_content">
+                <button onclick="dialogAddNote()" id="btn_add_note" class="btn">
+                    <img src="assets/icon/plus.svg" alt="" srcset="">
+                </button>
+                <h1>Notizblock</h1>
+                <button onclick="dialogTrash()" id="btn_show_trash" class="btn">
+                    <img src="assets/icon/trash.svg" alt="" srcset="">
+                </button>
+            </div>
+            <p class="header_line"></p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div onclick="closeOverlay()" id="overlay_add_note" class="overlay_add_note d_none">
+        </div>
+        <div onclick="closeOverlay()" id="overlay_show_trash" class="overlay_show_trash d_none">
+        </div>
+        
+        <h2>Notes</h2>
+        <div id="content" class="notebox">
+
+        </div>
+        <h2>archiv</h2>
+        <div id="archiv_content" class="notebox">
+
+        </div>
+        <h2>trash</h2>
+        <div id="trash_content" class="notebox">
+
+        </div>
+</section>
+
+<footer>
+    hier könnte ihre Werbung stehen!
+</footer>
+</body>
+</html>
